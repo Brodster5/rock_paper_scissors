@@ -34,22 +34,21 @@ def compare(input, ruby_input)
   if input == ruby_input
     return "You tied! Good try ;)"
  elsif input == "rock"
-  if ruby_input == "paper"
-    return "Paper wins!"
-  else 
+  if ruby_input == "scissors"
     return "Rock wins!"
-  end
+  else 
+    return "Paper wins!"
   elsif input == "paper"
-    if ruby_input == "scissors"
-      return "Scissors wins!"
-    else 
+    if ruby_input == "rock"
       return "Paper wins!"
-    end
+    else 
+      return "Scissors wins!"
     elsif input == "scissors"
-      if ruby_input == "paper"
-        return "Scissors wins!"
-      else 
+      if ruby_input == "rock"
         return "Rock wins!"
+      else 
+        return "Scissors wins!"
+      end
     end
   end
 end
